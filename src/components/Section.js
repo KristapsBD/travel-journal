@@ -4,7 +4,7 @@ import { ImLocation } from 'react-icons/im';
 const Section = (props) => {
     return (
         <section>
-            <img src={props.imageUrl} alt='japan' />
+            <a href={props.googleMapsUrl}><img src={props.imageUrl} alt='japan' /></a>
             <div className='text-content'>
                 <div className='head'>
                     <ImLocation className='location-icon' />

@@ -77,6 +77,10 @@ section img {
   align-self: center;
 }
 
+.view-maps:hover {
+  color: #83808c;
+}
+
 section h1 {
   font-weight: 700;
   font-size: 25px;
