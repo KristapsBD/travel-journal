@@ -1,23 +1,19 @@
 import React from 'react'
 import { ImLocation } from 'react-icons/im';
 
-const Section = () => {
+const Section = (props) => {
     return (
         <section>
-            <img src='https://source.unsplash.com/WLxQvbMyfas' alt='japan' />
+            <img src={props.imageUrl} alt='japan' />
             <div className='text-content'>
                 <div className='head'>
                     <ImLocation className='location-icon' />
-                    <p className='country'>JAPAN</p>
-                    <p className='view-maps'>View on Google Maps</p>
+                    <p className='country'>{props.location}</p>
+                    <a href={props.googleMapsUrl} className='view-maps'>View on Google Maps</a>
                 </div>
-                <h1>Mount Fuji</h1>
-                <p className='date'>12 Jan, 2021 - 24 Jan, 2021</p>
-                <p className='description'>
-                    Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet).
-                    Mount Fuji is the single most popular tourist site in Japan,
-                    for both Japanese and foreign tourists.
-                </p>
+                <h1>{props.title}</h1>
+                <p className='date'>{props.startDate} - {props.endDate}</p>
+                <p className='description'>{props.description}</p>
             </div>
         </section>
     )
