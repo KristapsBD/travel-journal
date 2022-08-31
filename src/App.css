@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  background: #F55A5A;
+}
+
+.navbar h1 {
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding-left: 7px;
+}
+
+.world-icon {
+  align-self: center;
+  font-size: 24px;
+  color: #FFFFFF;
+}
